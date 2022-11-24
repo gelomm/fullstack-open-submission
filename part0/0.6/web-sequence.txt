@@ -1,0 +1,15 @@
+title 0.6 SPA
+
+note over browser :
+the browser sends only one request
+to the server 
+end note
+
+browser -> server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server -> browser: JSON-data [{content: "new note",date: "2022-11-24T03:27:21.517Z"}, ...]
+ 
+note over browser :
+the included data is represented
+in the JSON format which helps the
+server to correctly parse the data
+end note
